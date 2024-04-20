@@ -1,0 +1,214 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "default",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "employee_id",
+          "first_name",
+          "last_name",
+          "email",
+          "phone_number",
+          "hire_date",
+          "job_id",
+          "salary",
+          "manager_id",
+          "department_id"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 42,
+        "min_value": 42
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "last_name",
+        "value_set": [
+          "",
+          "Austin",
+          "Baer",
+          "Baida",
+          "Bell",
+          "Chen",
+          "Colmenares",
+          "De Haan",
+          "Ernst",
+          "Everett",
+          "Faviet",
+          "Fay",
+          "Fripp",
+          "Gietz",
+          "Grant",
+          "Greenberg",
+          "Hartstein",
+          "Higgins",
+          "Himuro",
+          "Hunold",
+          "Johnson",
+          "Kaufling",
+          "Khoo",
+          "King",
+          "Kochhar",
+          "Livingston",
+          "Lorentz",
+          "Mavris",
+          "Mikkilineni",
+          "Partners",
+          "Pataballa",
+          "Popp",
+          "Raphaely",
+          "Russell",
+          "Sciarra",
+          "Taylor",
+          "Tobias",
+          "Urman",
+          "Vollman",
+          "Weiss",
+          "Whalen"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "last_name"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "last_name",
+        "max_value": 0.9761904761904762,
+        "min_value": 0.9761904761904762
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "last_name",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string",
+          "FixedString"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "email",
+        "value_set": [
+          "adam.fripp@sqltutorial.org",
+          "alexander.hunold@sqltutorial.org",
+          "alexander.khoo@sqltutorial.org",
+          "britney.everett@sqltutorial.org",
+          "bruce.ernst@sqltutorial.org",
+          "charles.johnson@sqltutorial.org",
+          "daniel.faviet@sqltutorial.org",
+          "david.austin@sqltutorial.org",
+          "den.raphaely@sqltutorial.org",
+          "diana.lorentz@sqltutorial.org",
+          "guy.himuro@sqltutorial.org",
+          "hermann.baer@sqltutorial.org",
+          "irene.mikkilineni@sqltutorial.org",
+          "ismael.sciarra@sqltutorial.org",
+          "jack.livingston@sqltutorial.org",
+          "jennifer.whalen@sqltutorial.org",
+          "john.chen@sqltutorial.org",
+          "john.russell@sqltutorial.org",
+          "jonathon.taylor@sqltutorial.org",
+          "jose manuel.urman@sqltutorial.org",
+          "karen.colmenares@sqltutorial.org",
+          "karen.partners@sqltutorial.org",
+          "kimberely.grant@sqltutorial.org",
+          "king@sqltutorial.org",
+          "lex.de haan@sqltutorial.org",
+          "luis.popp@sqltutorial.org",
+          "matthew.weiss@sqltutorial.org",
+          "michael.hartstein@sqltutorial.org",
+          "nancy.greenberg@sqltutorial.org",
+          "neena.kochhar@sqltutorial.org",
+          "pat.fay@sqltutorial.org",
+          "payam.kaufling@sqltutorial.org",
+          "sarah.bell@sqltutorial.org",
+          "shanta.vollman@sqltutorial.org",
+          "shelley.higgins@sqltutorial.org",
+          "shelli.baida@sqltutorial.org",
+          "sigal.tobias@sqltutorial.org",
+          "steven.king@sqltutorial.org",
+          "susan.mavris@sqltutorial.org",
+          "valli.pataballa@sqltutorial.org",
+          "william.gietz@sqltutorial.org"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "email"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "email",
+        "max_value": 0.9761904761904762,
+        "min_value": 0.9761904761904762
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "email",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string",
+          "FixedString"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.12"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "employees",
+      "data_connector_name": "default_configured_data_connector_name",
+      "datasource_name": "pv_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20240420T090810.897226Z"
+    },
+    "batch_spec": {
+      "batch_identifiers": {},
+      "class_name": "Asset",
+      "data_asset_name": "employees",
+      "module_name": "great_expectations.datasource.data_connector.asset",
+      "schema_name": "HumanResources",
+      "sorters": {},
+      "table_name": "Employee",
+      "type": null
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "checkpoint_employees_changed",
+    "expectation_suite_name": "default",
+    "great_expectations_version": "0.18.12",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2024-04-20T12:08:10.876024+03:00"
+    },
+    "validation_id": null,
+    "validation_time": "20240420T090811.441361Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column_list": [
+            "BusinessEntityID",
+            "NationalIDNumber",
+            "LoginID",
+            "OrganisationNode",
+            "OrganisationLevel",
+            "JobTitle",
+            "BirthDate",
+            "MaritalStatus",
+            "Gender",
+            "HireDate",
+            "SalariedFlag",
+            "VacationHours",
+            "SickLeaveHours",
+            "CurrentFlag",
+            "rowguid",
+            "ModifiedDate"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "mismatched": [
+            {
+              "Expected": "OrganisationNode",
+              "Expected Column Position": 3,
+              "Found": "OrganizationNode"
+            },
+            {
+              "Expected": "OrganisationLevel",
+              "Expected Column Position": 4,
+              "Found": "OrganizationLevel"
+            }
+          ]
+        },
+        "observed_value": [
+          "BusinessEntityID",
+          "NationalIDNumber",
+          "LoginID",
+          "OrganizationNode",
+          "OrganizationLevel",
+          "JobTitle",
+          "BirthDate",
+          "MaritalStatus",
+          "Gender",
+          "HireDate",
+          "SalariedFlag",
+          "VacationHours",
+          "SickLeaveHours",
+          "CurrentFlag",
+          "rowguid",
+          "ModifiedDate"
+        ]
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "max_value": 300,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 290
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column": "BusinessEntityID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 290,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column": "NationalIDNumber"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 290,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column": "LoginID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 290,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column": "Gender",
+          "max_value": 0.6,
+          "min_value": 0.4
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.006896551724137931
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column": "Gender",
+          "type_list": [
+            "M",
+            "F"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NCHAR"
+      },
+      "success": false
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "1ca63e9e995dac0defa4f162dfa593d8",
+          "column": "MaritalStatus",
+          "type_list": [
+            "M",
+            "S"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "NCHAR"
+      },
+      "success": false
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 8,
+    "success_percent": 50.0,
+    "successful_expectations": 4,
+    "unsuccessful_expectations": 4
+  },
+  "success": false
+}
