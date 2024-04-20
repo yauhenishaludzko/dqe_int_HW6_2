@@ -1,4 +1,4 @@
-# Project for running Great Expectations Data Quality framework under SQL TRN Database
+# Project for running Great Expectations Data Quality framework under SQL AdventureWorks2012 Database
 
 ## How to Run the Project:
 
